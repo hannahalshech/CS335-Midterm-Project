@@ -4,10 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.ArrayList;
 
-// THINK ABOUT PASSING EMAIL/NAME AROUND WITH LOG IN STAT
-
-// CREATE AN ARRAY LIST OF USERS/ADD USER TO ARRAY WHEN MAKING AN ACCOUNT
-
 public class hotelSystem {
 	
 	public static char logInStat = 'F'; // made this a global variable to avoid some other annoying stuff
@@ -51,8 +47,7 @@ public class hotelSystem {
 			} // end else if
 				
 			else if(choice == 3) {
-				makeReservation(currentUser, customers, scan);
-					
+				makeReservation(currentUser, customers, scan);		
 			} // end else if
 				
 			else if(choice == 4) {
@@ -224,6 +219,12 @@ public class hotelSystem {
 
 	
 	public static HashMap<String, ArrayList<String>> createAccount(HashMap<String, ArrayList<String>> customers, Scanner scan) {
+		System.out.println("Having an account at our hotel makes check-in more efficient. Also, \r\n"
+				+ "- Guests and hotel staff can avoid close-contact interactions.\r\n"
+				+ "- Hotels can collect all necessary information from guests.\r\n"
+				+ "- Employees can use their time more effectively.\r\n"
+				+ "- Guests can get to their rooms as soon as possible.\r\n"
+				+ "");
 		
 		// get info about the user, store in an array stored as the value of a hashmap
 		
